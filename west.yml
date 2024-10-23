@@ -1,0 +1,48 @@
+manifest:
+  defaults:
+    remote: sendrato-git
+
+  remotes:
+    - name: sendrato-git
+      url-base: git@github.com:Sendrato
+
+  projects:
+    - name: zephyr
+      path: zephyr
+      west-commands: scripts/west-commands.yml
+      revision: main-branch-develop
+      import:
+        name-whitelist:
+          - ci-tools
+          - cmsis
+          - hal_atmel
+          - hal_nordic
+          - hal_nxp
+          - hal_st
+          - hal_stm32
+          - libmetal
+          - littlefs
+          - mcuboot
+          - mcumgr
+          - mbedtls
+          - nrf_hw_models
+          - open-amp
+          - openthread
+          - segger
+          - tinycbor
+          - tinycrypt
+    - name: awareable-fw
+      path: awareable-fw
+      revision: develop
+      import:
+        name-whitelist:
+          - ol23_sdk
+    - name: sdk-nrf
+      path: nrf
+      revision: v2.7.0-sendrato
+      import:
+        name-whitelist:
+          - nrfxlib
+
+  self:
+    path: awf-zephyr
