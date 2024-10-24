@@ -39,7 +39,9 @@ manifest:
           - ol23_sdk
     - name: sdk-nrf
       path: nrf
-      revision: v2.7.0-sendrato
+      # Using v2.5.2-sendrato as v2.7.0-sendrato triggers sysbuild when building for nRf5340
+      # causing CMake configuration errors
+      revision: v2.5.2-sendrato
       import:
         name-whitelist:
           - nrfxlib
