@@ -15,6 +15,7 @@ manifest:
         name-whitelist:
           - ci-tools
           - cmsis
+          - fatfs
           - hal_atmel
           - hal_nordic
           - hal_nxp
@@ -31,6 +32,7 @@ manifest:
           - segger
           - tinycbor
           - tinycrypt
+          - zcbor
     - name: awareable-fw
       path: awareable-fw
       revision: develop
