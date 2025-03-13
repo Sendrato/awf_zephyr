@@ -21,6 +21,7 @@ manifest:
           - hal_nxp
           - hal_st
           - hal_stm32
+          - liblc3
           - libmetal
           - littlefs
           - mcuboot
